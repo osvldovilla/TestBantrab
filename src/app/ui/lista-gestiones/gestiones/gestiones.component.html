@@ -1,0 +1,10 @@
+<h2>Listado de Gestiones</h2>
+<hr/>
+
+<div class="card mt-3 p-3" *ngFor="let gestion of gestiones">
+    <h2>
+        Gestión No: <a [routerLink]="['/detalleGestion', gestion.id ]">{{gestion.id}}</a>
+    </h2>
+
+    <div>Cliente: {{gestion.cliente}}</div>
+</div>

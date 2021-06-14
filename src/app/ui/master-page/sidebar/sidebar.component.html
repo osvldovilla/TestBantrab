@@ -1,0 +1,21 @@
+<div class="sidebar">
+    <div class="logo_content">
+        <div class="logo">
+            <img src="../../../../assets/avatar.svg" width="20%" alt="" />
+            <div class="logo_name p-2">Bienvenido</div>
+        </div>
+        <i class="bx bx-menu" (click)="toggle()" id="btn"></i>
+    </div>
+    <ul class="nav_list">
+        <li *ngFor="let itemMenu of sideBarNav">
+            <a href="{{itemMenu.redirect}}">
+                <i class="{{itemMenu.icon}}"></i>
+                <span class="links_name">{{itemMenu.name}}</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="home_content">
+    <app-content></app-content>
+</div>

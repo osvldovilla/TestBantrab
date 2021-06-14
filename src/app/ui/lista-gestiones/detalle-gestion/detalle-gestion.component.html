@@ -1,0 +1,14 @@
+<h2>Detalle de Gestión</h2>
+<hr/>
+
+<div class="card mt-3 p-3" *ngFor="let gestionFind of gestion">
+    <h2>
+        Gestión No: {{gestionFind.id}}
+    </h2>
+
+    <div>Descripcion:{{gestionFind.descripcion}}</div>
+    <div>Cliente:{{gestionFind.cliente}}</div>
+    <div>Dirección:{{gestionFind.direccion}}</div>
+</div>
+
+<button class="btn btn-primary mt-3" (click)="onBackPressed()">Regresar</button>
