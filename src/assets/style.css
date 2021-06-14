@@ -289,3 +289,19 @@ body {
     width: calc(100% - 240px);
     left: 240px;
 }
+
+.button {
+    background-color: white;
+    border: none;
+    color: #01AEB4;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+}
+
+.button5 {
+    border-radius: 50%;
+}

@@ -1,10 +1,42 @@
-<h2>Listado de Gestiones</h2>
-<hr/>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="row">
+                <div class="col-12">
+                    <button class="button button5">+</button>
+                    <span style="font-size: x-small;">Agregar Gestion</span>
+                </div>
+            </div>
 
-<div class="card mt-3 p-3" *ngFor="let gestion of gestiones">
-    <h2>
-        Gestión No: <a [routerLink]="['/detalleGestion', gestion.id ]">{{gestion.id}}</a>
-    </h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="input-group input-group-sm mb-3 p-3">
+                        <input type="text" placeholder="Buscar aqui" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+            </div>
 
-    <div>Cliente: {{gestion.cliente}}</div>
-</div>
+            <div class="col-12">
+                <div class="card mt-3 p-3">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Gestión #</th>
+                                <th>Nombre Completo</th>
+                                <th>DPI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let gestion of gestiones">
+                                <th scope="row"><a [routerLink]="['/detalleGestion', gestion.id ]">{{gestion.id}}</a></th>
+                                <td>{{gestion.cliente}}</td>
+                                <td>{{gestion.dpi}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </div>

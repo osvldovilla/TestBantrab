@@ -11,13 +11,36 @@ export class DataService {
       id: 123,
       descripcion: "Visitar al cliente el dia de mañana",
       cliente: "Josué Osvaldo",
+      dpi: "2848969930114",
       direccion: "19 Calle, Zona 1"
     },
     {
       id: 456,
       descripcion: "Solicitar documentación al cliente",
       cliente: "Paola Perez",
+      dpi: "3125123451503",
       direccion: "Baja Verapaz, Zona 4"
+    },
+    {
+      id: 894,
+      descripcion: "Solicitar documentación al cliente",
+      cliente: "Karen Mendoza",
+      dpi: "2945123451503",
+      direccion: "Mixco Guatemala, Zona 4"
+    },
+    {
+      id: 26,
+      descripcion: "Solicitar documentación al cliente",
+      cliente: "Salvador Reyes",
+      dpi: "3912123451503",
+      direccion: "Mixco, el naranjo"
+    },
+    {
+      id: 144,
+      descripcion: "Solicitar documentación al cliente",
+      cliente: "Antonio Leal",
+      dpi: "1895123451503",
+      direccion: "Solola"
     }
   ];
 

@@ -6,15 +6,27 @@
         </div>
         <i class="bx bx-menu" (click)="toggle()" id="btn"></i>
     </div>
-    <ul class="nav_list">
-        <li *ngFor="let itemMenu of sideBarNav">
-            <a href="{{itemMenu.redirect}}">
-                <i class="{{itemMenu.icon}}"></i>
-                <span class="links_name">{{itemMenu.name}}</span>
-            </a>
-        </li>
-    </ul>
+
+    <div class="container">
+        <ul class="nav_list">
+            <li *ngFor="let itemMenu of sideBarNav">
+                <a href="{{itemMenu.redirect}}">
+                    <i class="{{itemMenu.icon}}"></i>
+                    <span class="links_name">{{itemMenu.name}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
+
+<script type="text/javascript">
+    $('.child').hide();
+    $('.parent').children().click(function() {
+        event.preventDefault();
+        $(this).children('.child').slideToggle('slow');
+        $(this).find('span').toggle();
+    });
+</script>
 
 <div class="home_content">
     <app-content></app-content>
